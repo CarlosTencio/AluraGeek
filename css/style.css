@@ -1,0 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+header{
+    background-color: #0242A0;
+    margin-top: 0;
+    padding: 0;
+    position: relative; /* Para asegurarse de que el header respete el flujo del documento */
+    height: 100px; /* Ajusta la altura según sea necesario */
+    width: 100%;
+}
+header h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+main{
+    margin-top: 20px;
+    /* background-color: #0242A0; */
+    display: flex;
+    justify-content: space-between;   
+}
+.section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+     /* background-color: #252c37;  */
+    color: aliceblue;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    
+}
+#section-left{
+    box-shadow: rgba(0,0,0,2) 10px 10px 10px;
+    background-color: #252c37;
+    margin-left: 20px;
+    
+}
+#section-rigth{
+    margin-right: 20px;
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+
+#section-rigth div{
+    margin-top: 25px;
+}
+
+footer{
+    background-color: #0242A0;
+    margin-top: 20px;
+    padding: 0;
+    position: relative; /* Para asegurarse de que el header respete el flujo del documento */
+    height: 100px; /* Ajusta la altura según sea necesario */
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
