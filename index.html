@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -16,32 +17,38 @@
         </h1>
     </header>
     <main id="main">
+        <!-- <h2>Mis productos</h2> -->
         <section class="section" id="section-left">
             <p>No hay productos disponibles</p>
         </section>
         <section class="section" id="section-rigth">
-            <p>Agregar productos...</p>
-            <div>
-                <label for="">Nombre:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="">Precio:</label>
-                <input type="text" id="precio" name="precio">
-            </div>
-            <div>
-                <label for="">Imagen:</label>
-                <input type="text" id="imagen" name="imagen">    
-            </div>
-            <div>
-                <input type="submit" value="Guardar producto">
-                <input type="button" value="Cancelar">
-            </div>
+            <form class="container_formulario" data-form>
+                <p>Agregar productos...</p>
+                <div>
+                    <label for="">Nombre:</label>
+                    <input type="text" id="name" name="name" data-name>
+                </div>
+                <div>
+                    <label for="">Precio:</label>
+                    <input type="text" id="precio" name="precio" data-price>
+                </div>
+                <div>
+                    <label for="">Imagen:</label>
+                    <input type="text" id="imagen" name="imagen" data-url>
+                </div>
+                <div>
+                    <input type="submit" value="Guardar producto" />
+                    <input type="button" value="Cancelar" />
+                </div>
+            </form>
+
         </section>
     </main>
     <footer id="footer">
-        <p>AluraGeek - 2020</p>
+        <p id="footer">AluraGeek - 2020</p>
+        <p id="footer">Desarrollado por Carlos Tencio.</p>
     </footer>
+    <script type="module" src="./js/addProducto.js"></script>
 </body>
 
 </html>

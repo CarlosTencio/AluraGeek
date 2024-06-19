@@ -1,29 +1,23 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: #0242A0;
     margin-top: 0;
     padding: 0;
     position: relative; /* Para asegurarse de que el header respete el flujo del documento */
-    height: 100px; /* Ajusta la altura según sea necesario */
+    height: 70px; /* Ajusta la altura según sea necesario */
     width: 100%;
 }
 header h1{
@@ -33,46 +27,62 @@ header h1{
     padding-top: 10px;
 }
 main{
-    margin-top: 20px;
-    /* background-color: #0242A0; */
-    display: flex;
-    justify-content: space-between;   
+   width: 100%;
+    background-color: #930e70; 
+    display:  flex;
+    justify-content: space-evenly;
+    height: 100%;
 }
+/* 
+usar position relativa para acomodar el h2 con left
+*/
 .section{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 250px;
      /* background-color: #252c37;  */
     color: aliceblue;
-    width: 60%;
+    width: 450px;
     align-items: center;
     text-align: center;
-    height: 500px;
+    height: 100%;
     
 }
 #section-left{
-    box-shadow: rgba(0,0,0,2) 10px 10px 10px;
+    box-shadow: rgb(1,1,1,2) -10px 10px 10px;
     background-color: #252c37;
-    margin-left: 20px;
-    
+    border-radius: 0.5em;
+    height: 70%;
 }
 #section-rigth{
-    margin-right: 20px;
     display: block;
     color: black;
     font-size: 20px;
 }
 
+
 #section-rigth div{
     margin-top: 25px;
 }
 
+
 footer{
     background-color: #0242A0;
-    margin-top: 20px;
-    padding: 0;
-    position: relative; /* Para asegurarse de que el header respete el flujo del documento */
-    height: 100px; /* Ajusta la altura según sea necesario */
+    position: relative;
+    bottom: 0;
     width: 100%;
+    height: 3.7rem;
+}
+
+#footer p{
     color: white;
-    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#section-rigth input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
