@@ -1,25 +1,43 @@
 {
   "products": [
     {
-      "name": "Product 1",
-      "price": "Price 1",
-      "image": "",
-      "id": "1"
+      "id": "ecc0",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
     },
     {
-      "name": "Product 1",
-      "price": "Price 1",
-      "image": "",
-      "id": "2"
+      "id": "bd70",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
     },
     {
-      "name": "Product 1",
-      "price": "Price 1",
-      "image": "",
-      "id": "3"
+      "id": "f3ad",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
     },
     {
-      "id": "4650",
+      "id": "b658",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
+    },
+    {
+      "id": "af2e",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
+    },
+    {
+      "id": "8b4a",
+      "name": "Silla gamer",
+      "price": "100 colones",
+      "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
+    },
+    {
+      "id": "b6f3",
       "name": "Silla gamer",
       "price": "100 colones",
       "url": "https://versuscr.com/wp-content/uploads/2021/12/V30-N1.jpg"
