@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'ArcadeClassic', sans-serif;
+    
 }
 html, body {
     height: 100%;
@@ -13,7 +15,7 @@ body {
     flex-direction: column;
 }
 header{
-    background-color: #0242A0;
+    background-color: #fe0000;
     margin-top: 0;
     padding: 0;
     position: relative; /* Para asegurarse de que el header respete el flujo del documento */
@@ -21,26 +23,35 @@ header{
     width: 100%;
 }
 header h1{
-    color: white;
-    font-size: 25px;
+    font-size: 2em;
+    color: #000000;
     text-align: center;
     padding-top: 10px;
 }
 main{
+    background-color: #9b9696;
    width: 100%;
-    background-color: #930e70; 
     display:  flex;
     justify-content: space-evenly;
-    height: 100%;
+    height: 87%;
 }
+
 /* 
 usar position relativa para acomodar el h2 con left
 */
+h2{
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+}
 .section{
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 250px;
      /* background-color: #252c37;  */
-    color: aliceblue;
+
     width: 450px;
     align-items: center;
     text-align: center;
@@ -48,15 +59,25 @@ usar position relativa para acomodar el h2 con left
     
 }
 #section-left{
-    box-shadow: rgb(1,1,1,2) -10px 10px 10px;
-    background-color: #252c37;
+    scroll-behavior: auto;
+    box-shadow: rgb(0,0,0,0.5) -10px 10px 10px;
+    /* background-color:#5D5D5D;  */
     border-radius: 0.5em;
-    height: 70%;
+    width: 50vh;
+    height: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 25px;
+    overflow-y: auto;/*genera el scroll cuando los elementos ya no entran.*/
+    align-items: flex-start;
+    
 }
 #section-rigth{
     display: block;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
+    display: flexbox;
 }
 
 
@@ -64,25 +85,177 @@ usar position relativa para acomodar el h2 con left
     margin-top: 25px;
 }
 
-
-footer{
-    background-color: #0242A0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 3.7rem;
-}
-
-#footer p{
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-}
-
+    footer {
+        background-color: #c42020;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 3.7rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #footer p {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
 #section-rigth input[type="text"]{
     width: 70%;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #9f6e6e;
 }
+
+.card {
+    width: 120px; /* Aumenta el ancho de la carta */
+    height: 199px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card h1 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+.btn-price {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.card .price {
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+.card .delete-btn {
+    background-color: white;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.delete-btn img {
+    width: 15px;
+    height: 15px;
+}
+     /* Aplicar estilos a todos los elementos con scroll */
+     * {
+        scrollbar-width: thin;          /* Para Firefox */
+        scrollbar-color: rgba(49, 49, 49, 0.5) rgba(241, 241, 241, 0.5);  /* Para Firefox */
+    }
+
+    /* Estilo específico para WebKit (Chrome, Safari, Edge) */
+    *::-webkit-scrollbar {
+        width: 8px;  /* Ancho de la barra de desplazamiento vertical */
+        height: 8px; /* Altura de la barra de desplazamiento horizontal */
+        
+    }
+
+    *::-webkit-scrollbar-track {
+        background: rgba(241, 241, 241, 0.5);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: rgba(136, 136, 136, 0.5);
+        border-radius: 4px;
+    }
+
+    *::-webkit-scrollbar-thumb:hover {
+        background: rgba(85, 85, 85, 0.5);
+    }
+
+    *::-webkit-scrollbar-button {
+        background: rgba(241, 241, 241, 0.5);
+        height: 0px;
+        width: 0px;
+        display: none; /* Ocultar botones de la barra de desplazamiento */
+    }
+    .css-button-rounded--sky {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: 2px solid #4433ff;
+        background: #4433ff;
+      }
+      .css-button-rounded--sky:hover {
+        background: #fff;
+        color: #4433ff
+      }
+      .css-button-rounded--sand{
+        min-width: 130px;
+        height: 40px;
+        color: #000000;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: 2px solid #adb5bd;
+        background: #adb5bd;
+      }
+      .css-button-rounded--sand:hover {
+        background: #fff;
+        color: #000001
+      }
+      @media (max-width: 768px) {
+        main {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    
+        .section {
+            width: 90%;
+            margin: 20px 0;
+        }
+    
+        #section-left {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            overflow-x: auto; /* Ensure horizontal scroll */
+        }
+    
+        #section-left .card {
+            flex: 0 0 auto; /* Ensure cards don't shrink */
+        }
+    
+        #section-right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #section-right input[type="text"] {
+            width: 80%;
+        }
+    }
